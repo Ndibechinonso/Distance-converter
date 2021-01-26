@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Distance Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <!--input section starts-->
+      <div class="input-section">
+        <h2 class="header">Convert Distance</h2>
+
+        <!---input number-->
+        <div class="info">
+          <p>Value to convert</p>
+          <p><i>input an integer or decimal</i></p>
+        </div>
+        <!--input number ends-->
+        <input type="number" class="input" required>
+        <div class="convert">
+          <p>From:</p>
+          <select id="unconvUnits">
+            <option value="km">kilometer (km)</option>
+            <option  value="m">meter (m)</option>
+            <option  value="cm">centimeter (cm)</option>
+            <option  value="ml">miles (mi)</option>
+          </select>
+        </div>
+        <div class="convert">
+          <p>To:</p>
+          <select id="convUnits">
+            <option value="km">kilometer (km)</option>
+            <option value="m">meter (m)</option>
+            <option value="cm">centimeter (cm)</option>
+            <option value="ml">miles (mi)</option>
+          </select> 
+        </div>
+      </div>
+      <div class="button-div">
+        <button id="all-clear" class="clear">Clear</button>
+        <button id="calc" class="clear">Calculate</button>
+      </div>
+      <div class="answer">
+        <div class="placeholder">Answer</div>
+        <div class="resultDisplay"></div>
+      </div>
+    </div>
+    <script src="https://drive.google.com/uc?export=view&id=19QBo7Ei8y72kHbQmSkBA0yjcAYzXyX8F"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
