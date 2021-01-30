@@ -1,7 +1,10 @@
 body {
   background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
 .converter {
   font-family: Arial, sans-serif;
   width: 400px;
@@ -23,12 +26,10 @@ h1 {
   position: relative;
   top: 5px;
 }
-
 .info {
   text-align: center;
   margin-top: 30px;
 }
-
 .info p {
   margin-bottom: 5px;
 }
@@ -41,7 +42,6 @@ h1 {
   display: inline-block;
   width: 50px;
 }
-
 .convert {
   height: 35px;
 }
@@ -61,7 +61,6 @@ h1 {
   outline-style: none;
   margin: 20px;
 }
-
 .answer {
   border: 1px solid #bbbbbb;
   min-height: 50px;
@@ -69,19 +68,16 @@ h1 {
   background-color: #4099ab;
   padding-bottom: 2px;
 }
-
 .placeholder {
   padding-left: 5px;
   padding-top: 5px;
   font-size: 20px;
 }
-
 .resultDisplay {
   padding-left: 20px;
   font-family: "Secular One", sans-serif;
   font-size: 24px;
 }
-
 .reverse {
   border-radius: 1000%;
   height: 30px;
@@ -101,7 +97,6 @@ input {
   border: none;
   font-size: 24px;
 }
-
 select {
   font-size: 20px;
   width: 170px;
@@ -112,7 +107,6 @@ select {
   outline-style: none;
   border-radius: 10px;
 }
-
 p {
   font-family: "Secular One", sans-serif;
   font-size: 24px;
