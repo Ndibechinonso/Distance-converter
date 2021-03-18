@@ -7,6 +7,7 @@ const clearBtn = document.querySelector("#all-clear");
 const calcBtn = document.querySelector("#calc");
 const reverse = document.querySelector(".reverse")
 
+// instance of the Calculator Class constructor
 const converter = new Converter(resultDisplay, input);
 
 function calculate() {
@@ -60,14 +61,17 @@ function calculate() {
     resultDisplay.innerHTML = `${input.value} ${unconvUnits.value} = <br> ${result} ${convUnits.value}`
 }
 
+// performs conversion
 calcBtn.addEventListener("click", calculate);
 
+// event listener that handles toggling the units options
 reverse.addEventListener("click", () => {
     const unconvUnitsVar = unconvUnits.value;
     unconvUnits.value = convUnits.value;
     convUnits.value = unconvUnitsVar;
 })
 
+// clears inputField and output display
 clearBtn.addEventListener("click", () => {
     converter.clear()
 });

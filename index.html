@@ -14,19 +14,17 @@
 
 <body>
   <div class="converter">
-    <!--input section starts-->
     <div class="input-section">
       <h1 class="header">Distance Converter</h1>
-
-      <!---input number-->
       <div class="info">
         <p>Value to convert</p>
         <p style="color:red"><i>input an integer or decimal</i></p>
       </div>
-      <!--input number ends-->
+      <!--takes number to convert -->
       <input type="number" class="input" required>
-      <div class="convert">
 
+      <!--options of units to convert from -->
+      <div class="convert">
         <select id="unconvUnits">
           <option value="km">kilometer (km)</option>
           <option value="m">meter (m)</option>
@@ -34,10 +32,10 @@
           <option value="ml">miles (mi)</option>
         </select>
       </div>
-
+        <!--button to toggle the options-->
       <button class="reverse"><i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-long-arrow-alt-down"></i>
       </button>
-
+      <!--options of units to convert to-->
       <div class="convert">
         <select id="convUnits">
           <option value="km">kilometer (km)</option>
@@ -51,7 +49,7 @@
       <button id="all-clear" class="clear clear1">Clear</button>
       <button id="calc" class="clear clear2">Calculate</button>
     </div>
-
+    <!--output display session-->
     <div class="answer">
       <div class="placeholder">Answer :</div>
       <div class="resultDisplay"></div>
