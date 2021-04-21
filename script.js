@@ -1,4 +1,30 @@
 
+class Converter {
+    constructor(showResult, inputField) {
+        this.showResult = showResult;
+        this.inputField = inputField;
+        this.clear()
+    }
+
+    convertInput(inputValue, convertFrom, convertTo) {
+        this.inputValue = inputValue
+        this.convertFrom = convertFrom
+        this.convertTo = convertTo
+    }
+
+    diplayAnswer(result) {
+        this.result = result
+        if (this.inputValue === "0" || this.inputValue === "") return
+        this.showResult.innerHTML = result;
+    }
+
+    clear() {
+        this.showResult.innerHTML = ""
+        this.inputField.value = ""
+    }
+}
+
+
 const input = document.querySelector(".input");
 const resultDisplay = document.querySelector(".resultDisplay");
 const unconvUnits = document.querySelector("#unconvUnits");
